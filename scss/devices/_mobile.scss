@@ -18,6 +18,10 @@
          row-gap: 3vh;
       }
 
+      %iconColor {
+         @include iconLink(20vh,20vh,50%);
+      }
+
       aside {
          width: 80%;
          align-items: center;
@@ -25,8 +29,35 @@
          row-gap: 2vh;
       }
 
+      aside:nth-child(1) {
+         > a {
+            @extend %iconColor;
+            background-color: $blueColor;
+         }
+      }
+
+      aside:nth-child(2) {
+         > a {
+            @extend %iconColor;
+            background-color: $redColor;
+         }
+      }
+
+      aside:nth-child(3) {
+         > a {
+            @extend %iconColor;
+            background-color: $greenColor;
+         }
+      }
+
+      aside:nth-child(4) {
+         > a {
+            @extend %iconColor;
+            background-color: $orangeColor;
+         }
+      }
+
       a {
-         @include iconLink(20vh,20vh,50%,$orangeColor);
          @include flexElements;
          justify-content: center;
       }
