@@ -1,0 +1,32 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: $fontFamily;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+section {
+   background-color: whitesmoke;
+}
+
+section, aside {
+   @include flexElements;
+}
+
+h2 {
+   color: $fontH2Color;
+   font-size: 36px;
+}
+
+p {
+   color: dimgray;
+   line-height: 1.5;
+}
+
+a {
+   text-decoration: none;
+   
+}

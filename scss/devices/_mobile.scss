@@ -1,0 +1,39 @@
+/* MOBILE VERSION */
+@media (min-width: 200px) {
+   html {
+      height: 100%;
+   }
+
+   body {
+      @include flexElements;
+      align-items: center;
+   }
+
+   .testing {
+      row-gap: 5vh;
+      align-items: center;
+
+      > section {
+         align-items: center;
+         row-gap: 3vh;
+      }
+
+      aside {
+         width: 80%;
+         align-items: center;
+         text-align: center;
+         row-gap: 2vh;
+      }
+
+      a {
+         @include iconLink(20vh,20vh,50%,$orangeColor);
+         @include flexElements;
+         justify-content: center;
+      }
+
+      i {
+         font-size: 48px;
+         color: whitesmoke;
+      }
+   }
+}
